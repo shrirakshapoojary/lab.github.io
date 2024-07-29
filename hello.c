@@ -139,6 +139,21 @@ Program 06: Write and execute a program for matrix chain multiplication for the 
 	printf("\n");
 	}
 	}
+         int main()
+{
+long int arr[10],n,i;
+clrscr();
+
+printf("Enter the numbre of matrices\n");
+scanf("%ld", &n);
+
+printf("Enter the sizes of matrices (p0,p1....)\n");
+for(i=0;i<=n;i++)
+scanf("%ld", &arr[i]);
+printf("Minimum number of multiplications is :\n");
+MCM(arr, n+1);
+}
+
 
 
 
@@ -204,6 +219,13 @@ void main()
 	j--;
 	}
      //	printf(": THE LCS is  %s \n",lc);
+	}
+            max( int a, int b)
+	{
+	if(a>b)
+	return a;
+	else
+	return b;
 	}
 
 Program 08: Write and execute a program to find Minimum Spanning Tree using Prim’s method.
@@ -734,7 +756,6 @@ int main() {
                                                                                
                                                                                    
                                                                 
-
 
 
 
